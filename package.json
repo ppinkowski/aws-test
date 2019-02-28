@@ -4,7 +4,8 @@
   "description": "Playing about with AWS",
   "main": "hello.js",
   "scripts": {
-    "test": "jest --env=node"
+    "test": "jest --env=node",
+    "build": "zip hello.zip hello.js"
   },
   "repository": {
     "type": "git",
