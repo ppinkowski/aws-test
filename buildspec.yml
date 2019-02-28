@@ -11,3 +11,4 @@ phases:
 artifacts:
   files:
     - hello.zip
+  name: hello-$(date +%Y-%m-%d).zip
