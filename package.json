@@ -1,0 +1,22 @@
+{
+  "name": "play",
+  "version": "1.0.0",
+  "description": "Playing about with AWS",
+  "main": "hello.js",
+  "scripts": {
+    "test": "jest --env=node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppinkowski/aws-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppinkowski/aws-test/issues"
+  },
+  "homepage": "https://github.com/ppinkowski/aws-test#readme",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
