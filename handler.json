@@ -1,0 +1,109 @@
+{
+  "event": {
+    "resource": "/",
+    "path": "/",
+    "httpMethod": "GET",
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "cache-control": "max-age=0",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "GB",
+      "dnt": "1",
+      "Host": "2qrzcthcvi.execute-api.eu-west-2.amazonaws.com",
+      "Referer": "https://eu-west-2.console.aws.amazon.com/cloudformation/home?region=eu-west-2",
+      "upgrade-insecure-requests": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36",
+      "Via": "2.0 f7c2c81dcd8f9c4723ba9992c4abd851.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "sLt8P6aBd_eJ9G4P1jCAblCbLtoyutZMRgRRgo9imA0d50415iiDXg==",
+      "X-Amzn-Trace-Id": "Root=1-5c77fbf5-30590591937251992b4f89ac",
+      "X-Forwarded-For": "212.161.113.174, 216.137.62.56",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+      "Accept": [
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+      ],
+      "Accept-Encoding": ["gzip, deflate, br"],
+      "Accept-Language": ["en-US,en;q=0.9"],
+      "cache-control": ["max-age=0"],
+      "CloudFront-Forwarded-Proto": ["https"],
+      "CloudFront-Is-Desktop-Viewer": ["true"],
+      "CloudFront-Is-Mobile-Viewer": ["false"],
+      "CloudFront-Is-SmartTV-Viewer": ["false"],
+      "CloudFront-Is-Tablet-Viewer": ["false"],
+      "CloudFront-Viewer-Country": ["GB"],
+      "dnt": ["1"],
+      "Host": ["2qrzcthcvi.execute-api.eu-west-2.amazonaws.com"],
+      "Referer": [
+        "https://eu-west-2.console.aws.amazon.com/cloudformation/home?region=eu-west-2"
+      ],
+      "upgrade-insecure-requests": ["1"],
+      "User-Agent": [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
+      ],
+      "Via": [
+        "2.0 f7c2c81dcd8f9c4723ba9992c4abd851.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+        "sLt8P6aBd_eJ9G4P1jCAblCbLtoyutZMRgRRgo9imA0d50415iiDXg=="
+      ],
+      "X-Amzn-Trace-Id": ["Root=1-5c77fbf5-30590591937251992b4f89ac"],
+      "X-Forwarded-For": ["212.161.113.174, 216.137.62.56"],
+      "X-Forwarded-Port": ["443"],
+      "X-Forwarded-Proto": ["https"]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "resourceId": "85n608sg2d",
+      "resourcePath": "/",
+      "httpMethod": "GET",
+      "extendedRequestId": "V0ROaE_0rPEFRgA=",
+      "requestTime": "28/Feb/2019:15:19:17 +0000",
+      "path": "/call",
+      "accountId": "826925315321",
+      "protocol": "HTTP/1.1",
+      "stage": "call",
+      "domainPrefix": "2qrzcthcvi",
+      "requestTimeEpoch": 1551367157884,
+      "requestId": "371facb8-3b6c-11e9-8eda-2f16dda2b686",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "sourceIp": "212.161.113.174",
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36",
+        "user": null
+      },
+      "domainName": "2qrzcthcvi.execute-api.eu-west-2.amazonaws.com",
+      "apiId": "2qrzcthcvi"
+    },
+    "body": null,
+    "isBase64Encoded": false
+  },
+  "context": {
+    "callbackWaitsForEmptyEventLoop": true,
+    "logGroupName": "/aws/lambda/hello",
+    "logStreamName": "2019/02/28/[$LATEST]f96097bdda214d169f5999c10406499c",
+    "functionName": "hello",
+    "memoryLimitInMB": "128",
+    "functionVersion": "$LATEST",
+    "invokeid": "2547f385-d72e-4fdb-8261-33cae5473216",
+    "awsRequestId": "2547f385-d72e-4fdb-8261-33cae5473216",
+    "invokedFunctionArn": "arn:aws:lambda:eu-west-2:826925315321:function:hello"
+  }
+}
