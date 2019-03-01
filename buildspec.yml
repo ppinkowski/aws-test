@@ -10,4 +10,5 @@ phases:
 artifacts:
   files:
     - hello.js
+    - appspec.yml
   name: hello-$(date +%Y-%m-%d).zip
