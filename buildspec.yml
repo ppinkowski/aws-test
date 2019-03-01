@@ -11,4 +11,4 @@ artifacts:
   files:
     - hello.js
     - stack.cform
-  name: hello-$(date +%Y-%m-%d).zip
+  name: hello-$(git rev-parse --short HEAD).zip
