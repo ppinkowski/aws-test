@@ -1,6 +1,6 @@
 exports.hello = async (event, context, callback) => {   
     return {
         statusCode: 200,
-        body: JSON.stringify({hello: "World!"})
+        body: JSON.stringify({yo: "Bitches!"})
     };
 }
