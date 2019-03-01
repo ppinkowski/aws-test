@@ -10,5 +10,5 @@ phases:
 artifacts:
   files:
     - hello.js
-    - appspec.yml
+    - stack.cform
   name: hello-$(date +%Y-%m-%d).zip
