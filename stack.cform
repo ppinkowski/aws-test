@@ -11,6 +11,9 @@ Parameters:
     AllowedPattern: '^[a-z0-9]+$'
     Default: 'call'
 
+  lambdaSource:
+    Type: 'String'
+
 Resources:
   ApiGateway:
     Type: 'AWS::ApiGateway::RestApi'
@@ -44,7 +47,7 @@ Resources:
     Properties:
       Code:
         S3Bucket: sl-phil-test
-        S3Key: src/hello1.zip
+        S3Key: !Sub ${lambdaSource}.zip
       Description: 'Hello World Function'
       FunctionName: !Ref lambdaFunctionName
       Handler: hello.hello

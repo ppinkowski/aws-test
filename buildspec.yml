@@ -7,8 +7,7 @@ phases:
   build:
     commands:
       - npm test
-      - npm run build
 artifacts:
   files:
-    - hello.zip
+    - hello.js
   name: hello-$(date +%Y-%m-%d).zip
