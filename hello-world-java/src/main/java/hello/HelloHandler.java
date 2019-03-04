@@ -9,6 +9,6 @@ public class HelloHandler implements RequestHandler<AwsProxyRequest, AwsProxyRes
 
     @Override
     public AwsProxyResponse handleRequest(AwsProxyRequest input, Context context) {
-        return new AwsProxyResponse(200, null, "{\"message\": \"Hello from Java!\"}");
+        return new AwsProxyResponse(200, null, "{\"message\": \"Hello from Java, dude!\"}");
     }
 }
