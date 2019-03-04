@@ -26,6 +26,7 @@ public class HelloHandler implements RequestStreamHandler {
 
     @Override
     public void handleRequest(InputStream input, OutputStream output, Context context) throws IOException {
+        System.out.println("Received Request!!");
         handler.proxyStream(input, output, context);
     }
 }
