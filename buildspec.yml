@@ -3,7 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt-get update && apt-get install -y nodejs && apt-get install -y npm
+      - curl -sL https://deb.nodesource.com/setup_8.x | bash -
+      - apt-get install -y nodejs
       - cd hello-world-js && npm install && cd ..
       - cd hello-world-java && chmod +x gradlew && ./gradlew build && cd ..
       - aws cloudformation package --template-file template.yaml --s3-bucket sl-phil-test --output-template-file packaged.yaml
