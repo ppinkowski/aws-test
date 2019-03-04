@@ -3,12 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install
+      - cd hello-world-js && npm install
+      - aws cloudformation package --template-file template.yaml --s3-bucket sl-phil-test --output-template-file packaged.yaml
   build:
     commands:
-      - npm test
+      - cd hello-world-js && npm test
 artifacts:
+  type: zip
   files:
-    - hello.js
-    - stack.cform
-  name: hello-$(git rev-parse --short HEAD).zip
+    - template.yaml
+    - packaged.yaml
