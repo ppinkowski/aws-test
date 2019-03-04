@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - cd hello-world-js && npm install && cd ..
-      - cd hello-world-java && ./gradlew build && cd ..
+      - cd hello-world-java && chmod +x gradlew && ./gradlew build && cd ..
       - aws cloudformation package --template-file template.yaml --s3-bucket sl-phil-test --output-template-file packaged.yaml
   build:
     commands:
