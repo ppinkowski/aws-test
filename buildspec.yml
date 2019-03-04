@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - apt-get install nodejs && apt-get install npm
       - cd hello-world-js && npm install && cd ..
       - cd hello-world-java && chmod +x gradlew && ./gradlew build && cd ..
       - aws cloudformation package --template-file template.yaml --s3-bucket sl-phil-test --output-template-file packaged.yaml
