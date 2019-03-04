@@ -1,2 +1,5 @@
 node_modules
 packaged.yaml
+.idea
+.gradle
+hello-world-java/build

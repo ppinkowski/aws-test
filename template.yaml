@@ -19,11 +19,28 @@ Resources:
                         Path: /hellojs
                         Method: get
 
+    HelloWorldJavaFunction:
+        Type: AWS::Serverless::Function
+        Properties:
+            CodeUri: hello-world-java/build/distributions/hello-java-1.0-SNAPSHOT.zip
+            Handler: hello.HelloHandler::handleRequest
+            Runtime: java8
+            Events:
+                HelloWorld:
+                    Type: Api
+                    Properties:
+                        Path: /hellojava
+                        Method: get
+
 Outputs:
 
     HelloWorldApi:
       Description: "API Gateway endpoint URL for Prod stage for Hello World function"
       Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hellojs/'
+
+    HelloWorldJavaApi:
+      Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+      Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hellojava/'
 
     HelloWorldFunction:
       Description: "Hello World Lambda Function ARN"
