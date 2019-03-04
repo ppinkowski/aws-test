@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Import;
 public class Application extends SpringBootServletInitializer {
 
     // silence console logging
-    @Value("${logging.level.root:OFF}")
-    String message = "";
+//    @Value("${logging.level.root:OFF}")
+//    String message = "";
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
