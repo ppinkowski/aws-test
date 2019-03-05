@@ -39,7 +39,7 @@ Resources:
     ClientBucket:
         Type: AWS::S3::Bucket
         Properties:
-            AccessControl: Private
+            AccessControl: Public
             BucketName: sl-phil-aws-test-static-site
             WebsiteConfiguration:
                 IndexDocument: index.html
