@@ -11,7 +11,6 @@ const invokeLambda = params =>
 
 exports.handler = async (event, context, callback) => {
   const result = await invokeLambda({
-    ClientContext: 'JSLambda',
     FunctionName: process.env.JavaFunction,
     InvocationType: 'RequestResponse'
   });
