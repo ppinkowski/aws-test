@@ -1,4 +1,3 @@
 # aws-test
-Playing about with AWS
 
-a
+Playing about with AWS
