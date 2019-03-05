@@ -40,7 +40,7 @@ Resources:
         Type: AWS::S3::Bucket
         Properties:
             AccessControl: Private
-            Bucketname: test-static-site
+            BucketName: test-static-site
             WebsiteConfiguration:
                 IndexDocument: index.html
                 RoutingRules:
@@ -64,3 +64,7 @@ Outputs:
     HelloWorldFunctionIamRole:
         Description: 'Implicit IAM Role created for Hello World function'
         Value: !GetAtt HelloWorldFunctionRole.Arn
+
+    BucketName:
+        Description: 'Client Bucket Name'
+        Value: !Ref ClientBucket
