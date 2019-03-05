@@ -17,7 +17,7 @@ exports.handler = async (event, context, callback) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      callJavaResult: JSON.parse(result.Payload.body)
+      callJavaResult: result.Payload.body
     })
   };
 };
