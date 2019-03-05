@@ -11,6 +11,9 @@ Resources:
             CodeUri: hello-world-js/
             Handler: app.handler
             Runtime: nodejs8.10
+            Policies:
+                - LambdaInvokePolicy:
+                      FunctionName: !Ref HelloWorldJavaFunction
             Events:
                 HelloWorld:
                     Type: Api
