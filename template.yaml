@@ -47,6 +47,9 @@ Resources:
                     - RoutingRuleCondition:
                           HttpErrorCodeReturnedEquals: '404'
                           KeyPrefixEquals: index.html
+                      RedirectRule:
+                          HostName: '*'
+                          ReplaceKeyPrefixWith: index.html
 
 Outputs:
     HelloWorldApi:
