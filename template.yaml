@@ -40,7 +40,7 @@ Resources:
         Type: AWS::S3::Bucket
         Properties:
             AccessControl: Private
-            BucketName: test-static-site
+            BucketName: sl-phil-aws-test-static-site
             WebsiteConfiguration:
                 IndexDocument: index.html
                 RoutingRules:
