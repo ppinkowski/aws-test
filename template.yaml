@@ -46,10 +46,8 @@ Resources:
                 RoutingRules:
                     - RoutingRuleCondition:
                           HttpErrorCodeReturnedEquals: '404'
-                          KeyPrefixEquals: site/op-portal/build/index.html
                       RedirectRule:
-                          HostName: '*'
-                          ReplaceKeyPrefixWith: site/op-portal/build/index.html
+                          ReplaceKeyWith: '/'
 
 Outputs:
     HelloWorldApi:
