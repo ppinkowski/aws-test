@@ -42,7 +42,7 @@ Resources:
             AccessControl: Private
             BucketName: sl-phil-aws-test-static-site
             WebsiteConfiguration:
-                IndexDocument: site/op-portal/build/index.html
+                IndexDocument: index.html
                 RoutingRules:
                     - RoutingRuleCondition:
                           HttpErrorCodeReturnedEquals: '404'
