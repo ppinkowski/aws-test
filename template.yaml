@@ -41,20 +41,12 @@ Resources:
         Properties:
             AccessControl: Private
             Bucketname: test-static-site
-            CorsConfiguration:
-            LifecycleConfiguration:
-            NotificationConfiguration:
-            VersioningConfiguration:
             WebsiteConfiguration:
                 IndexDocument: index.html
                 RoutingRules:
                     - RoutingRuleCondition:
                           HttpErrorCodeReturnedEquals: '404'
                           KeyPrefixEquals: index.html
-
-            Tags:
-                - Key: key
-                  Value: value
 
 Outputs:
     HelloWorldApi:
