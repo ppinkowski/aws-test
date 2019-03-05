@@ -42,14 +42,14 @@ Resources:
             AccessControl: Private
             BucketName: sl-phil-aws-test-static-site
             WebsiteConfiguration:
-                IndexDocument: index.html
+                IndexDocument: site/op-portal/build/index.html
                 RoutingRules:
                     - RoutingRuleCondition:
                           HttpErrorCodeReturnedEquals: '404'
-                          KeyPrefixEquals: index.html
+                          KeyPrefixEquals: site/op-portal/build/index.html
                       RedirectRule:
                           HostName: '*'
-                          ReplaceKeyPrefixWith: index.html
+                          ReplaceKeyPrefixWith: site/op-portal/build/index.html
 
 Outputs:
     HelloWorldApi:
