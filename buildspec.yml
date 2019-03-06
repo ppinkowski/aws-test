@@ -20,3 +20,4 @@ artifacts:
     - template.yaml
     - packaged.yaml
     - op-portal/build/**/*
+  discard-paths: yes
