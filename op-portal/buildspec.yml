@@ -4,12 +4,12 @@ phases:
   install:
     commands:
       - npm i -g yarn
-      - yarn install
+      - cd op-portal && yarn install
   build:
     commands:
       - yarn build
 artifacts:
   type: zip
-  base-directory: build
+  base-directory: op-portal/build
   files:
     - '**/*'
