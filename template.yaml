@@ -21,7 +21,7 @@ Resources:
     Lambda2:
         Type: AWS::Serverless::Function
         Properties:
-            CodeUri: hello-world-java/build/distributions/hello-java-2-1.0-SNAPSHOT.zip
+            CodeUri: lambda-2/build/distributions/hello-java-2-1.0-SNAPSHOT.zip
             Handler: hello.LambdaHandler::handleRequest
             Runtime: java8
             Events:
