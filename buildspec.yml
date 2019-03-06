@@ -19,5 +19,9 @@ artifacts:
   files:
     - template.yaml
     - packaged.yaml
-    - op-portal/build/**/*
-  discard-paths: yes
+  secondary-artifacts:
+    site:
+      files:
+        base-directory: op-portal/build
+        files:
+          - '**/*'
