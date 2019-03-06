@@ -3,17 +3,11 @@ version: 0.2
 phases:
   install:
     commands:
-      - curl -sL https://deb.nodesource.com/setup_8.x | bash -
-      - apt-get install -y nodejs
-      - npm i -g yarn
-      - cd hello-world-js && npm install && cd ..
-      - cd op-portal && yarn install && cd ..
       - cd hello-world-java && chmod +x gradlew && ./gradlew build && cd ..
       - aws cloudformation package --template-file template.yaml --s3-bucket sl-phil-test --output-template-file packaged.yaml
   build:
     commands:
       - cd hello-world-js && npm test && cd ..
-      - cd op-portal && yarn build && cd ..
 artifacts:
   secondary-artifacts:
     template:
@@ -21,8 +15,3 @@ artifacts:
       files:
         - template.yaml
         - packaged.yaml
-    site:
-      type: zip
-      base-directory: op-portal/build
-      files:
-        - '**/*'

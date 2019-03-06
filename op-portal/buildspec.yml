@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm i -g yarn
+      - yarn install
+  build:
+    commands:
+      - yarn build
+artifacts:
+  secondary-artifacts:
+    site:
+      type: zip
+      base-directory: build
+      files:
+        - '**/*'
