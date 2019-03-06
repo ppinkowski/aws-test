@@ -15,12 +15,14 @@ phases:
       - cd hello-world-js && npm test && cd ..
       - cd op-portal && yarn build && cd ..
 artifacts:
-  type: zip
-  files:
-    - template.yaml
-    - packaged.yaml
   secondary-artifacts:
+    template:
+      type: zip
+      files:
+        - template.yaml
+        - packaged.yaml
     site:
+      type: zip
       base-directory: op-portal/build
       files:
         - '**/*'
