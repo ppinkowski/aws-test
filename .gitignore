@@ -3,4 +3,8 @@ packaged.yaml
 .idea
 .gradle
 .vscode
-hello-world-java/build
+build
+bin
+.classpath
+.project
+.settings

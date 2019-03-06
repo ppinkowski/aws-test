@@ -4,6 +4,7 @@ phases:
   build:
     commands:
       - cd hello-world-java && chmod +x gradlew && ./gradlew build && cd ..
+      - cd lambda-2 && chmod +x gradlew && ./gradlew build && cd ..
       - aws cloudformation package --template-file template.yaml --s3-bucket sl-phil-test --output-template-file packaged.yaml
 artifacts:
   type: zip

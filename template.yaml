@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
     sam-app
@@ -17,6 +17,19 @@ Resources:
                     Properties:
                         Path: /hellojava
                         Method: get
+
+    Lambda2:
+        Type: AWS::Serverless::Function
+        Properties:
+            CodeUri: hello-world-java/build/distributions/hello-java-2-1.0-SNAPSHOT.zip
+            Handler: hello.LambdaHandler::handleRequest
+            Runtime: java8
+            Events:
+                HelloWorld:
+                    Type: Api
+                    Properties:
+                        Path: /lambda2
+                        Method: get
     ClientBucket:
         Type: AWS::S3::Bucket
         Properties:
@@ -27,9 +40,9 @@ Resources:
 
 Outputs:
     HelloWorldJavaApi:
-        Description: 'API Gateway endpoint URL for Prod stage for Hello World function'
-        Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hellojava/'
+        Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+        Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hellojava/"
 
     BucketName:
-        Description: 'Client Bucket Name'
+        Description: "Client Bucket Name"
         Value: !Ref ClientBucket
