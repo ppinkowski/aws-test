@@ -21,7 +21,6 @@ artifacts:
     - packaged.yaml
   secondary-artifacts:
     site:
+      base-directory: op-portal/build
       files:
-        base-directory: op-portal/build
-        files:
-          - '**/*'
+        - '**/*'
