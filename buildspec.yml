@@ -9,9 +9,7 @@ phases:
     commands:
       - cd hello-world-js && npm test && cd ..
 artifacts:
-  secondary-artifacts:
-    template:
-      type: zip
-      files:
-        - template.yaml
-        - packaged.yaml
+  type: zip
+  files:
+    - template.yaml
+    - packaged.yaml

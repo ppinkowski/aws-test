@@ -9,9 +9,7 @@ phases:
     commands:
       - yarn build
 artifacts:
-  secondary-artifacts:
-    site:
-      type: zip
-      base-directory: build
-      files:
-        - '**/*'
+  type: zip
+  base-directory: build
+  files:
+    - '**/*'
