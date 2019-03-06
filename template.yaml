@@ -43,11 +43,6 @@ Resources:
             BucketName: sl-phil-aws-test-static-site
             WebsiteConfiguration:
                 IndexDocument: index.html
-                RoutingRules:
-                    - RoutingRuleCondition:
-                          HttpErrorCodeReturnedEquals: '404'
-                      RedirectRule:
-                          ReplaceKeyWith: '/'
 
 Outputs:
     HelloWorldApi:
