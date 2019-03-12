@@ -1,0 +1,13 @@
+type Query {
+  things(search: String): [Test]!
+}
+
+type Test {
+  id: String!
+  name: String
+  age: Float
+}
+
+schema {
+  query: Query
+}

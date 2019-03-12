@@ -1,0 +1,26 @@
+{
+  "name": "graphqltest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.418.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "fs": "0.0.1-security",
+    "graphql": "^14.1.1",
+    "graphql-server-express": "^1.4.0",
+    "graphql-tools": "^4.0.4"
+  },
+  "devDependencies": {
+    "rollup": "^1.6.0",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.1"
+  }
+}
